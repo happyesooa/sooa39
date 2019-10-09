@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>여기는 바로 DMZ유치원</title>
+	<meta charset="utf-8">
+<style type="text/css">
+	section{position: relative; height: 755px;}
+	img{position: absolute;}
+	#img1{top:700px; left: 300px;}
+	#img2{top:350px; right:240px;}
+	#img3{top:200px; right:300px;}
+	#img4{top:600px; right:500px;}
+	#img5{top:250px; left:300px;}
+
+	#img11{top:700px; left: 300px;z-index: 9999;}
+	#img22{top:350px; right:240px;z-index: 9999;}
+	#img33{top:200px; right:300px;z-index: 9999;}
+	#img44{top:600px; right:500px;z-index: 9999;}
+	#img55{top:250px; left:300px;z-index: 9999;}
+
+	#text1{top:700px; left: 300px;}
+	#text2{top:750px; right:240px;}
+	#text3{top:200px; right:300px;}
+	#text4{top:600px; right:500px;}
+	#text5{top:250px; left:300px;}
+
+	.text{color: white; position: absolute; line-height:11px; font-size: 11px;}
+	.a{opacity: 0;}
+	.a:hover{opacity: 1;}
+
+
+	#monitor{position: fixed; background-color: black;
+		 top: 0; right: 0; padding: 5px;
+		 width: 100px; height: 20px;
+		 color: yellow;}
+
+		@keyframes ltor{ 
+			from{left:0px;} 
+			to{left:400px;} 
+		}
+		@keyframes r1{ 
+			from{width:200px;} 
+			to{width:350px;} 
+		}
+</style>
+</head>
+
+<body> 
+	<section>
+
+		<img src="t.png" style="width: 700px; left: 0px; top: 110px; z-index: 999; animation: 2s ease 0s 1 normal forwards running ltor;" id="logo">
+		<img src="b2.png" style="position: fixed;">
+		<img src="in2.png" style="width: 500px; right:480px; top:580px;">
+	</section>
+	<section>
+		<img src="in.png" style="width: 200px; right:20px; top: 20px; position: fixed;">
+		<img src="a2.png" style="width:200px; " id="img2";>
+		<img src="a22.png" style="width:350px; " id="img22" class="a">
+		<img src="a1.png" style="width:200px; " id="img1">
+		<img src="a11.png" style="width:350px; " id="img11" class="a">
+		<img src="L1.png">
+		</div>
+	</section>
+	<section>
+		<img src="a3.png" style="width:200px;" id="img3">
+		<img src="a33.png" style="width:350px;" id="img33" class="a">
+		<img src="a4.png" style="width:200px;" id="img4">
+		<img src="a44.png" style="width:350px;" id="img44" class="a">
+
+		<img src="L2.png">
+	</section>
+	<section>
+		<img src="a5.png" style="width:200px;" id="img5">
+		<img src="a55.png" style="width:350px;" id="img55" class="a">
+		<img src="L3.png">
+	</section>
+	<section>
+		<img src="L4.png">
+	</section>
+	<audio src="p.mp4" id="g"></audio>
+	<audio src="o.mp4" id="f"></audio>
+	<audio src="i.mp4" id="d"></audio>
+	<audio src="u.mp4" id="s"></audio>
+	<audio src="y.mp4" id="a"></audio>
+
+	<div id="monitor"></div>
+	<script type="text/javascript"> window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+		if(t > 714.4){img2.style.animation = "r1 1s forwards";}
+		else{img2.style.animation = "";}
+
+		if(t > 1000.0){img1.style.animation = "r1 1s forwards";}
+		else{img1.style.animation = "";}
+
+		if(t > 1300.0){img3.style.animation = "r1 1s forwards";}
+		else{img3.style.animation = "";}
+
+		if(t > 1700.0){img4.style.animation = "r1 1s forwards";}
+		else{img4.style.animation = "";}
+
+		if(t > 2100.0){img5.style.animation = "r1 1s forwards";}
+		else{img5.style.animation = "";}
+
+
+
+		if(t > 714.4){img22.style.animation = "r1 1s forwards";}
+		else{img22.style.animation = "";}
+
+		if(t > 1000.0){img11.style.animation = "r1 1s forwards";}
+		else{img11.style.animation = "";}
+
+		if(t > 1300.0){img33.style.animation = "r1 1s forwards";}
+		else{img33.style.animation = "";}
+
+		if(t > 1700.0){img44.style.animation = "r1 1s forwards";}
+		else{img44.style.animation = "";}
+
+		if(t > 2100.0){img55.style.animation = "r1 1s forwards";}
+		else{img55.style.animation = "";}
+
+
+		img22.onclick = function(){
+			g.play();
+		}
+		img11.onclick = function(){
+			f.play();
+		}
+		img33.onclick = function(){
+			d.play();
+		}
+		img44.onclick = function(){
+			s.play();
+		}
+		img55.onclick = function(){
+			a.play();
+		}
+
+
+	}
+	</script>
+<body>  
+</body>  
+</html> 
